@@ -64,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassesFolder\ClassConnect.cs" />
+    <Compile Include="WindowFolder\CallerWindow.xaml.cs">
+      <DependentUpon>CallerWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -124,6 +128,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowFolder\CallerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -170,6 +178,8 @@
       <DependentUpon>ModelDemoDB.edmx</DependentUpon>
       <LastGenOutput>ModelDemoDB.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resource\Source\На авторизацию_Обновление кода.jpg" />
+    <Resource Include="Resource\Logotype\Лого ТНС.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

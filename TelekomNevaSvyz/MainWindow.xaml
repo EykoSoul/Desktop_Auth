@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TelekomNevaSvyz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="700" ResizeMode="CanMinimize" KeyUp="Window_KeyUp_1">
     <Grid>
-        
+        <Label Content="Телеком Нева Связь" HorizontalAlignment="Left" Margin="48,47,0,0" FontSize="26" VerticalAlignment="Top" Height="38" Width="290"/>
+        <Image HorizontalAlignment="Left" Height="162" Margin="499,0,-1,0" VerticalAlignment="Top" Width="194" Source="Resource/Logotype/Лого ТНС.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="201,143,0,247" TextWrapping="Wrap" Text="Номер" FontSize="18" Height="30" Width="63"/>
+        <TextBox x:Name="Namber_TB" HorizontalAlignment="Left" Height="30" Margin="264,143,0,0" TextWrapping="Wrap" FontSize="18" VerticalAlignment="Top" Width="215" TextChanged="Namber_TB_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="201,197,0,192" TextWrapping="Wrap" Text="Пароль" FontSize="18" Height="30" Width="63"/>
+        <PasswordBox x:Name="Pass_PB" HorizontalAlignment="Left" Height="30" Margin="264,197,0,0" FontSize="18" VerticalAlignment="Top" Width="215"/>
+        <TextBlock HorizontalAlignment="Left" Margin="201,246,0,143" TextWrapping="Wrap" Text="Код" FontSize="18" Height="30" Width="63"/>
+        <TextBox x:Name="Kod_TB" HorizontalAlignment="Left" Height="30" Margin="264,246,0,0" TextWrapping="Wrap" FontSize="18" VerticalAlignment="Top" Width="180"/>
+        <Button x:Name="Cancel_Btn" Content="Отмена" HorizontalAlignment="Left" Margin="264,345,0,0" FontSize="18" VerticalAlignment="Top" Width="75" Height="30" Click="Cancel_Btn_Click"/>
+        <Button x:Name="Login_Btn" Content="Вход" HorizontalAlignment="Left" Margin="404,345,0,0" FontSize="18" VerticalAlignment="Top" Width="75" Height="30" Click="Login_Btn_Click"/>
+        <Button x:Name="UpdKod_Btn" HorizontalAlignment="Left" Margin="449,245,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="UpdKod_Btn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Resource/Source/На авторизацию_Обновление кода.jpg"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>
